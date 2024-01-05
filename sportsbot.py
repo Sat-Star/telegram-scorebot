@@ -22,6 +22,7 @@ async def score(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == '__main__':
     application = ApplicationBuilder().token(os.getenv('API')).build()
+    #enter your API key here instead of `os.getenv('API')`
     
     start_handler = CommandHandler('start', start)
     score_handler = CommandHandler('score', score)
