@@ -5,6 +5,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 import livescores
 
+API_KEY = #Put your API KEY from BotFather here
 scory = livescores.get_scores()
 
 logging.basicConfig(
@@ -21,8 +22,7 @@ async def score(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=scory)
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token(os.getenv('API')).build()
-    #enter your API key here instead of `os.getenv('API')`
+    application = ApplicationBuilder().token(API_KEY).build()
     
     start_handler = CommandHandler('start', start)
     score_handler = CommandHandler('score', score)
