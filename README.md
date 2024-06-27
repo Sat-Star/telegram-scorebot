@@ -1,3 +1,8 @@
+# © 2024 Syntax Sphere
+# This file is licensed under the MIT License.
+# See the LICENSE file in the project root for more information
+<br>
+
 # telegram-scorebot
 
 <p>Get your own API key using Botfather</p>
